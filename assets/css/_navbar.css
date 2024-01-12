@@ -1,0 +1,206 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.nav-inner-container {
+    width: 93%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: end;
+    gap: 7px;
+}
+
+.logo h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    position: relative;
+    bottom: -6px;
+    margin: 0;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.nav-login {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    font-size: 1rem;
+    gap: 0.5rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.nav-login h4 {
+    margin: 0;
+}
+
+.nav-login span {
+    font-size: 0.8rem;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-login:hover .user-profile-nav {
+    display: flex;
+}
+
+.nav-login:hover .fa-angle-down {
+    transition: all 0.3s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.user-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-img i {
+    font-size: 0.7rem;
+}
+
+.user-profile-nav {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    z-index: 1;
+    background-color: #ffffff;
+    display: none;
+}
+
+.user-details {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.user-details img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.user-name {
+    background-color: transparent;
+    overflow: auto;
+}
+
+.user-name h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    background-color: transparent;
+}
+
+.user-name span {
+    font-weight: 400;
+    overflow-wrap: break-word;
+    background-color: transparent;
+}
+
+.user-action {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: transparent;
+}
+
+.user-action a span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 10px;
+    background-color: transparent;
+}
+
+.user-action a {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.nav-login-btn {
+    width: 100px;
+    height: 35px;
+    background-color: #333de2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-size: 0.8rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.animate__animated.animate__fadeIn {
+    animation-duration: 0.5s;
+}
+
+.admin-img {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: 'poppin';
+}
+
+.admin-img img {
+    width: 45px;
+    height: 45px;
+}

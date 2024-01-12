@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/_navbar.css">
+</head>
+<body>
+    <%- include('_navbar'); %>
+    <div class="post-blog-container">
+        <div class="post-blog-heading">
+            <h1>Post a Blog</h1>
+        </div>
+        <div class="post-blog-form-container">
+            <form action="/blog/post-blog" method="POST" enctype="multipart/form-data" class="post-blog-form">
+                <div class="input-container">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="file" name="image" accept="image/*">
+                </div>
+                <div class="input-container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" name="title" placeholder="Email" required />
+                </div>
+                <div class="input-container">
+                    <i class="fa-solid fa-key"></i>
+                    <textarea name="content" id="" cols="30" rows="10" placeholder="Content" required></textarea>
+                </div>
+                <input type="submit" value="Post Blog" class="post-blog-button" />
+            </form>
+        </div>
+    </div>
+
+    <div class="blog-container">
+        <div class="blog-heading">
+            <h1>Blog</h1>
+        </div>
+        <div class="blog-posts">
+            <% for(let i=0; i < blogs.length; i++) { %>
+                <div class="blog-post">
+                    <div class="blog-post-image">
+                        <img width="100px" height="100px" style="object-fit: cover;" src="data:<%= blogs[i].contentType %>;base64,<%= blogs[i].image.toString('base64') %>" alt="">
+                    </div>
+                    <div class="blog-post-title">
+                        <h1><%= blogs[i].title %></h1>
+                    </div>
+                    <div class="blog-post-content">
+                        <p><%= blogs[i].content %></p>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

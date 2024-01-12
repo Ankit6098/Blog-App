@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="   https://cdn-icons-png.flaticon.com/512/10823/10823393.png "
+      type="image/x-icon"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/izitoast.css" />
+    <link rel="stylesheet" href="/css/signin-up.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div class="back-btn">
+      <a href="/">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://lottie.host/97e7661a-fa4f-4e52-83cb-9a82ff262656/1NveXYIf0d.json"
+          background="transparent"
+          speed="1"
+          style="width: 100px; height: 100px"
+          loop
+          direction="1"
+          mode="normal"
+          hover
+        ></lottie-player>
+      </a>
+    </div>
+
+    <div class="sign-in-container animate__animated animate__fadeInLeft active">
+      <form action="/user/create-session" method="post" class="form-container">
+        <div class="form-heading">
+          <h1>Sign In</h1>
+          <h1 class="last-h1">Login to manage your account</h1>
+        </div>
+        <div class="input-container">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="password-input-container">
+          <i class="fa-solid fa-key"></i>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            class="password"
+            required
+          />
+          <i class="fa-solid fa-eye show-password"></i>
+        </div>
+        <div class="forget-password-container">
+          <a href="">forgot password ?</a>
+        </div>
+        <input type="submit" value="Sign In" class="sign-in-btn" />
+        <div class="divider">
+          <div class="line-left"></div>
+          <p>Or</p>
+          <div class="line-right"></div>
+        </div>
+        <div class="other-login-method-container">
+          <a href="/user/auth/google"
+            ><img
+              src="   https://cdn-icons-png.flaticon.com/512/281/281764.png "
+              alt=""
+              width="20px"
+              height="20px"
+          /></a>
+          <a href="/user/auth/github"
+            ><img
+              src="   https://cdn-icons-png.flaticon.com/512/733/733553.png "
+              alt=""
+              width="20px"
+              height="20px"
+          /></a>
+        </div>
+        <p class="sign-up-para">
+          Don't have an account ?
+          <span class="toggle-sign-up-page">Sign Up</span>
+        </p>
+      </form>
+      <div class="svg-container">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://lottie.host/f23f1872-8412-4ecc-a034-a1b4e73935a4/tDrinhYvow.json"
+          background="transparent"
+          speed="1"
+          style="width: 700px; height: 700px"
+          loop
+          autoplay
+          direction="1"
+          mode="normal"
+        ></lottie-player>
+      </div>
+    </div>
+
+    <div class="sign-up-container animate__animated animate__fadeInRight">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://lottie.host/0453901a-7bb5-4d2b-bd1e-addf4503301a/RYqQ03uV96.json"
+        speed="2"
+        background="transparent"
+        speed="1"
+        style="width: 600px; height: 600px"
+        loop
+        autoplay
+        direction="1"
+        mode="normal"
+      ></lottie-player>
+      <form action="/user/create-user" method="post" class="form-container">
+        <form action="/user/create-user" method="post">
+          <div class="sign-up-form-heading">
+            <h1>Create your account</h1>
+          </div>
+          <div class="input-container">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="name" placeholder="Name" required />
+          </div>
+          <div class="input-container">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="input-container">
+            <i class="fa-solid fa-key"></i>
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              minlength="8"
+              required
+            />
+          </div>
+          <div class="confirm-input-container">
+            <i class="fa-solid fa-key"></i>
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              class="confirm-password"
+              required
+            />
+            <i class="fa-solid fa-eye show-confirm-password"></i>
+          </div>
+          <input type="submit" value="Sign Up" class="sign-in-btn" />
+          <div class="divider">
+            <div class="line-left"></div>
+            <p>Or</p>
+            <div class="line-right"></div>
+          </div>
+          <div class="other-login-method-container">
+            <a href="/user/auth/google"
+              ><img
+                src="   https://cdn-icons-png.flaticon.com/512/281/281764.png "
+                alt=""
+                width="20px"
+                height="20px"
+            /></a>
+            <a href="/user/auth/github"
+              ><img
+                src="   https://cdn-icons-png.flaticon.com/512/733/733553.png "
+                alt=""
+                width="20px"
+                height="20px"
+            /></a>
+          </div>
+          <p class="sign-up-para">
+            Already have an Accout ?
+            <span class="toggle-sign-in-page">Sign In</span>
+          </p>
+        </form>
+      </form>
+    </div>
+
+    <!-- izitoast -->
+    <script src="/js/izitoast.js"></script>
+    <!-- local -->
+    <script src="/js/script.js"></script>
+
+    <!-- izitoast -->
+    <script>
+      <% if (flash.success && flash.success.length > 0) { %>
+          iziToast.success({
+              title: 'Success',
+              message: '<%= flash.success %>',
+              theme: 'dark',
+              backgroundColor: 'linear-gradient(130deg, rgba(18,119,243,1) 0%, rgba(11,73,149,1) 97%)',
+              position: 'topCenter',
+              progressBarColor: 'white',
+              transitionInMobile: 'fadeInUp',
+              transitionOutMobile: 'fadeOutUp',
+
+          });
+      <% } %>
+
+      <% if (flash.error && flash.error.length > 0) { %>
+          iziToast.error({
+              title: 'Error',
+              message: '<%= flash.error %>',
+              theme: 'dark',
+              backgroundColor: '#AA0808',
+              position: 'topCenter',
+              progressBarColor: 'white',
+              transitionInMobile: 'fadeInUp',
+              transitionOutMobile: 'fadeOutUp',
+          });
+      <% } %>
+
+      <% if (flash.info && flash.info.length > 0) { %>
+          iziToast.warning({
+              title: 'Caution',
+              message: '<%= flash.info %>',
+              theme: 'dark',
+              backgroundColor: '#FFB300',
+              position: 'topCenter',
+              progressBarColor: 'white',
+              transitionInMobile: 'fadeInUp',
+              transitionOutMobile: 'fadeOutUp',
+          });
+      <% } %>
+
+      <% if (flash.warning && flash.warning.length > 0) { %>
+          iziToast.error({
+              title: 'Error',
+              message: '<%= flash.warning %>',
+              theme: 'dark',
+              backgroundColor: '#AA0808',
+              position: 'topCenter',
+              progressBarColor: 'white',
+              transitionInMobile: 'fadeInUp',
+              transitionOutMobile: 'fadeOutUp',
+          });
+      <% } %>
+    </script>
+  </body>
+</html>
